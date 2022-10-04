@@ -2,7 +2,7 @@ name: Unit Tests
 
 push:
   branches: [ main ]
-pull
+pull:
   branches: [ main ]
   
 jobs:
@@ -11,5 +11,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
-      cd test/unit
-      python -m unnittest test_utils
+        cd test/unit
+        python -m unnittest test_utils
