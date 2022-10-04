@@ -1,0 +1,15 @@
+name: Unit Tests
+
+push:
+  branches: [ main ]
+pull
+  branches: [ main ]
+  
+jobs:
+  unit_tests:
+    runs_on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+      cd test/unit
+      python -m unnittest test_utils
