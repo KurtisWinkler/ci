@@ -20,10 +20,10 @@ jobs:
         environment-file: env2.yml
     - run: pycodestyle $(git ls-files "*.py*")
     
-    unit_tests:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - run: |
-          cd test/unit
-          python -m unnittest test_utils
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        cd test/unit
+        python -m unnittest test_utils
