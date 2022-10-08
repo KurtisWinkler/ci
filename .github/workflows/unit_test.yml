@@ -28,7 +28,7 @@ jobs:
         cd test/unit
         python test_utils.py
         
-  func_tests:
+  func_tests: 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
