@@ -27,3 +27,11 @@ jobs:
     - run: |
         cd test/unit
         python test_utils.py
+        
+  func_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        cd test/func
+        bash test_search.sh
