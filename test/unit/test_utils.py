@@ -23,3 +23,7 @@ class TestUtils(unittest.TestCase):
         L_idx = utils.index_list(L)
 
         self.assertTrue(utils.binary_search(L_idx, 100) >= 0)
+
+       
+if __name__ == '__main__':
+    unittest.main()
