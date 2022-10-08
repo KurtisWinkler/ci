@@ -14,4 +14,5 @@ jobs:
     - uses: conda-incubator/setup-miniconda@v2
       with: 
         activate-environment: swe4s2
+        environment-file: env2.yml
     - run: pycodestyle $(git ls-files "*.py*")
