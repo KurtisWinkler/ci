@@ -24,6 +24,6 @@ class TestUtils(unittest.TestCase):
 
         self.assertTrue(utils.binary_search(L_idx, 100) >= 0)
 
-       
+
 if __name__ == '__main__':
     unittest.main()
